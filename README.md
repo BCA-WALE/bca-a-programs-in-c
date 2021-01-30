@@ -1,6 +1,5 @@
 # BCA A Programs in C
-BCA WALE's programs repo
-
+BCA A sec's programs repo.
 
 Programs in C given by our uni.
 Just **do not copy** the codes, humans.
