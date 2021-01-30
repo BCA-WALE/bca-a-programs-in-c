@@ -1,4 +1,0 @@
-hello,
-please write and commit changes with your own folder.
-
-DO NOT WRITE/MODIFY CODES IN OTHERS' PROGRAMS.
