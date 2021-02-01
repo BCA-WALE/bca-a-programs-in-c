@@ -47,7 +47,7 @@ int main() {
 						printf("Given array...\n");
 						for(i=0; i<l1; i++)
 							printf("%d ", arr1[i]);
-					
+					    flag=0;
 						while(flag==0)
 						{
 							printf("\nEnter data item: ");
@@ -75,7 +75,7 @@ int main() {
 						printf("\nGiven array is...\n");
 						for(i=0; i<l1; i++)
 							printf("%d ", arr1[i]);
-				
+				        flag = 0;
 						while(flag==0)
 						{
 							printf("\nEnter two positions: ");
@@ -150,7 +150,7 @@ int main() {
 				    	printf("\nGiven Array...\n");
 				    	for(i=0; i<l2; i++)
 				    		printf("%.2f  ", arr2[i]);
-
+                        flag=0;
 				    	while(flag==0)
 						{
 							printf("\nEnter two positions: ");
@@ -227,7 +227,6 @@ int validation()
 	     	}
 		
 	}
-
 	
 }
 void float_insert(int *ptr1, int position, float item)
