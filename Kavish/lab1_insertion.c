@@ -47,7 +47,7 @@ int main() {
 						printf("Given array...\n");
 						for(i=0; i<l1; i++)
 							printf("%d ", arr1[i]);
-						flag = 0;
+					
 						while(flag==0)
 						{
 							printf("\nEnter data item: ");
@@ -60,8 +60,7 @@ int main() {
 									flag = 1;
 									break;
 								}
-								else
-									flag = 0;
+								
 							}
 							if(flag==0)
 								printf("Data item not found\n");
@@ -76,7 +75,7 @@ int main() {
 						printf("\nGiven array is...\n");
 						for(i=0; i<l1; i++)
 							printf("%d ", arr1[i]);
-						flag = 0;
+				
 						while(flag==0)
 						{
 							printf("\nEnter two positions: ");
@@ -86,7 +85,7 @@ int main() {
 							else
 							{
 								printf("Invalid input\n");
-								flag = 0;
+								
 							}
 						}
 						for(i = k; i<j; i++)
@@ -151,17 +150,17 @@ int main() {
 				    	printf("\nGiven Array...\n");
 				    	for(i=0; i<l2; i++)
 				    		printf("%.2f  ", arr2[i]);
-				    	flag = 0;
+
 				    	while(flag==0)
 						{
 							printf("\nEnter two positions: ");
-							scanf("%d%d", &k, &j);
+							scanf("%d %d", &k, &j);
 							if(k>=1 && j>=1 && k<=11 && j<=11 && k<j)
 								break;
 							else
 							{
 								printf("Invalid input\n");
-								flag = 0;
+
 							}
 						}
 						for(i=k; i<j; i++)
@@ -203,7 +202,7 @@ void int_insert(int *ptr1, int position, int item)
 {
 	int j = *ptr1;
 	*ptr1 = *ptr1 + 1;
-	while(j>=position)
+	while(j>=position )
 	{
 		arr1[j+1] = arr1[j];
 		j--;
@@ -213,18 +212,23 @@ void int_insert(int *ptr1, int position, int item)
 int validation()
 {
 	int k, flag = 0;
-	while(flag==0)
-	{
-		printf("\nEnter position k: ");
-		scanf("%d", &k);
-		if(k>=1 && k<= 11)
-			return k;
-		else
-		{
-			printf("Invalid input\n");
-			flag = 0;
-		}
+
+	while(flag==0){
+			printf("\nEnter position k: ");
+	        scanf("%d", &k);
+	        if(k>=0 && k<= 11){
+			    return k;
+	        }
+
+	        else
+	        {
+	        	printf("Invalid input\n");
+		
+	     	}
+		
 	}
+
+	
 }
 void float_insert(int *ptr1, int position, float item)
 {
